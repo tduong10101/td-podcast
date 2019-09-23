@@ -21,7 +21,7 @@ def gen_random_episode(event, context):
     )['Items']
     logging.debug(len(episode_pool))
     logging.debug(len(current_episode))
-    random_number = random.randrange(0, len(episode_pool)-1)
+    random_number = random.randrange(0, len(episode_pool))
     if len(current_episode) != 0:
         for e in current_episode:
             e['status'] = "completed"
